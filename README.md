@@ -78,4 +78,6 @@ Saved as image files:
 - city_revenue.png  
 
 ---
-
+##  Interactive Dashboard
+View the live Tableau dashboard here:
+[Retail Store Analytics Dashboard](https://public.tableau.com/app/profile/bhavana.bordekar)
