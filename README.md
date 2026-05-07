@@ -31,7 +31,16 @@ Matplotlib.
 | products | 10 | Product catalog |
 | orders | 25 | Sales transactions |
 
-![Dashboard](Revenue_by_city.png)
+## Dashboard Preview
+
+Revenue by City
+![Revenue by City](images/Revenue_by_city.png)
+
+Monthly Revenue Trend
+![Monthly Revenue](images/Monthly_revenue_trend.png)
+
+Revenue by Category
+![Revenue by Category](Revenue_by_category.png)
 
 ## SQL Skills Demonstrated
 ```sql
