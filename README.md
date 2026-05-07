@@ -31,6 +31,8 @@ Matplotlib.
 | products | 10 | Product catalog |
 | orders | 25 | Sales transactions |
 
+![Dashboard](Revenue_by_city.png)
+
 ## SQL Skills Demonstrated
 ```sql
 -- Complex JOIN across 3 tables
