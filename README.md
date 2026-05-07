@@ -1,83 +1,69 @@
-# Retail Data Analysis Project (SQL + Python)
+# Retail Store SQL Analysis
 
 ## Overview
-This project is a retail data analysis system built using SQL and Python.  
-It analyzes customers, products, and orders to generate business insights and visualizations.
+End-to-end SQL business analysis of a retail store
+database with 3 tables — customers, products, and
+orders. Answered 7 business questions and built
+5 professional visualisations using Python and
+Matplotlib.
 
----
+## Project Structure
+## Business Questions Answered
+1. Which product category generates most revenue?
+2. What is the monthly revenue trend?
+3. Which city has the highest spending customers?
+4. Who are the top 5 customers by spending?
+5. Which products sell the most?
+6. What is the average order value?
+7. How does revenue compare across cities?
 
-##  Objectives
-- Analyze customer purchasing behavior  
-- Identify top customers by spending  
-- Track monthly revenue trends  
-- Compare revenue by category and city  
-- Visualize insights using charts  
+## Key Findings
+- Electronics generates the highest revenue
+- Hamburg is the top spending city
+- Laptop Pro is the best selling product
+- Revenue shows consistent growth trend
+- Top customer spent 3x the average
 
----
+## Database Structure
+| Table | Records | Description |
+|-------|---------|-------------|
+| customers | 12 | Customer details |
+| products | 10 | Product catalog |
+| orders | 25 | Sales transactions |
 
-##  Tools & Technologies
-- Python 
-- SQLite Database 
-- Pandas 
-- Matplotlib 
-- VS Code 
+## SQL Skills Demonstrated
+```sql
+-- Complex JOIN across 3 tables
+SELECT c.name, SUM(p.price * o.quantity) AS total_spent
+FROM orders o
+JOIN customers c ON o.customer_id = c.customer_id
+JOIN products p  ON o.product_id  = p.product_id
+GROUP BY c.name
+ORDER BY total_spent DESC
+LIMIT 3;
+```
 
----
+## Visualisations
+| Chart | Description |
+|-------|-------------|
+| Category Revenue | Bar chart by product category |
+| Monthly Trend | Line chart with area fill |
+| City Revenue | Horizontal bar chart |
+| Top Customers | Bar chart by spending |
+| Dashboard | All 4 charts combined |
 
-##  Dataset Structure
+## Tools Used
+- Python 3.11
+- SQLite (database)
+- Pandas (data analysis)
+- Matplotlib & Seaborn (visualisation)
+- VS Code
+```
 
-### Customers Table
-- customer_id
-- name
-- city
-- country
-- age
-- gender
+## About Me
+QA Automation Engineer → Junior Data Analyst
+Python | SQL | Pandas | Tableau | TensorFlow
+Based in Braunschweig, Germany 🇩🇪
 
-### Products Table
-- product_id
-- product_name
-- category
-- price
-
-### Orders Table
-- order_id
-- customer_id
-- product_id
-- quantity
-- order_date
-
----
-
-##  Key Insights
-
-### 1. Top Customers
-Identified top 3 customers based on total spending.
-
-### 2. Revenue by Category
-Analyzed which product categories generate the most revenue.
-
-### 3. Revenue by City
-Compared sales performance across different cities.
-
-### 4. Monthly Revenue Trend
-Tracked revenue growth over time.
-
----
-
-##  Visualizations
-The project generates the following charts:
-
-- Monthly Revenue Trend 
-- Revenue by Category 
-- Revenue by City 
-
-Saved as image files:
-- monthly_revenue.png  
-- category_revenue.png  
-- city_revenue.png  
-
----
-##  Interactive Dashboard
-View the live Tableau dashboard here:
+[![GitHub](https://img.shields.io/badge/GitHub-bhavana--bordekar-purple)](https://github.com/bhavana-bordekar)
 [Retail Store Analytics Dashboard](https://public.tableau.com/app/profile/bhavana.bordekar)
